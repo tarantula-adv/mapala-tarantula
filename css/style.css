@@ -96,3 +96,21 @@ body {
     background: #d6b3ff;
     color: white;
 }
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.logo-text {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
