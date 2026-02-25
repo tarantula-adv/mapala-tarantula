@@ -64,14 +64,6 @@ body {
     color: #d6b3ff;
 }
 
-/* HAMBURGER */
-.menu-toggle {
-    display: none;
-    font-size: 28px;
-    color: white;
-    cursor: pointer;
-}
-
 /* ================= HERO ================= */
 
 .hero {
@@ -101,6 +93,117 @@ body {
     font-size: 48px;
     margin-bottom: 15px;
 }
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    padding: 12px 30px;
+    background: white;
+    color: #4B0082;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #d6b3ff;
+    color: white;
+}
+
+/* ================= PAGE HEADER ================= */
+
+.page-header {
+    background: #4B0082;
+    color: white;
+    text-align: center;
+    padding: 140px 20px 60px 20px;
+}
+
+.page-header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.page-header p {
+    font-size: 18px;
+}
+
+/* ================= CONTENT ================= */
+
+.content {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 20px;
+    line-height: 1.8;
+}
+
+.content h2 {
+    color: #4B0082;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.content ul {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 992px) {
+    .navbar {
+        padding: 15px 30px;
+    }
+
+    .hero-content h1 {
+        font-size: 38px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        padding: 15px 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .nav-links a {
+        display: block;
+        width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 30px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .page-header {
+        padding: 160px 20px 50px 20px;
+    }
+
+    .page-header h1 {
+        font-size: 26px;
+    }
+
+    .content {
+        margin: 40px auto;
+    }
+        }}
 
 .hero-content p {
     font-size: 20px;
