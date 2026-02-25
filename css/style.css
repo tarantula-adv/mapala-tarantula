@@ -801,3 +801,16 @@ body {
         grid-template-columns: 1fr;
     }
 }
+.btn-wa {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #25D366;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+.btn-wa:hover {
+    background: #1ebe5d;
+    }
