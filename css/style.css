@@ -543,3 +543,57 @@ body {
         font-size: 16px;
     }
         }
+/* ================= KEGIATAN ================= */
+
+.kegiatan-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.kegiatan-card {
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+}
+
+.kegiatan-card:hover {
+    transform: translateY(-5px);
+}
+
+.kegiatan-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.kegiatan-card h3 {
+    padding: 15px;
+    color: #4B0082;
+}
+
+.kegiatan-card p {
+    padding: 0 15px 20px 15px;
+    font-size: 14px;
+}
+
+/* Responsive */
+
+@media (max-width: 992px) {
+    .kegiatan-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .kegiatan-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .kegiatan-card img {
+        height: 180px;
+    }
+        }
