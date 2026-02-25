@@ -21,5 +21,27 @@ document.addEventListener("DOMContentLoaded", function() {
             navLinks.classList.remove("active");
         }
     });
+    // LIGHTBOX GALERI
+const galeriItems = document.querySelectorAll('.galeri-item');
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+const closeLightbox = document.querySelector('.close-lightbox');
+
+galeriItems.forEach(item => {
+    item.addEventListener('click', () => {
+        lightbox.style.display = 'flex';
+        lightboxImg.src = item.src;
+    });
+});
+
+closeLightbox.addEventListener('click', () => {
+    lightbox.style.display = 'none';
+});
+
+lightbox.addEventListener('click', (e) => {
+    if (e.target !== lightboxImg) {
+        lightbox.style.display = 'none';
+    }
+});
 
 });
