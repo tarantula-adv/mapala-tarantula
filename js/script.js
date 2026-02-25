@@ -58,7 +58,7 @@ if (waForm) {
 
         const text = `Halo Tarantula Adventure,%0A%0ASaya ${nama}%0AEmail: ${email}%0A%0A${pesan}`;
 
-        const url = `https://wa.me/${nomorWA}?text=${text}`;
+        const url = `https://wa.me/62882008758780?text=pesan`;
 
         window.open(url, "_blank");
     });
