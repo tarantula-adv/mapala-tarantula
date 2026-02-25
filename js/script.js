@@ -54,7 +54,7 @@ if (waForm) {
         const email = document.getElementById("email").value;
         const pesan = document.getElementById("pesan").value;
 
-        const nomorWA = "0882008758780"; // GANTI DENGAN NOMOR WA ASLI (pakai 62 tanpa +)
+        const nomorWA = "62882008758780"; // GANTI DENGAN NOMOR WA ASLI (pakai 62 tanpa +)
 
         const text = `Halo Tarantula Adventure,%0A%0ASaya ${nama}%0AEmail: ${email}%0A%0A${pesan}`;
 
