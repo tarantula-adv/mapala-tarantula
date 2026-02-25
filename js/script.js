@@ -43,5 +43,24 @@ lightbox.addEventListener('click', (e) => {
         lightbox.style.display = 'none';
     }
 });
+// FORM WHATSAPP
+const waForm = document.getElementById("wa-form");
 
+if (waForm) {
+    waForm.addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        const nama = document.getElementById("nama").value;
+        const email = document.getElementById("email").value;
+        const pesan = document.getElementById("pesan").value;
+
+        const nomorWA = "0882008758780"; // GANTI DENGAN NOMOR WA ASLI (pakai 62 tanpa +)
+
+        const text = `Halo Tarantula Adventure,%0A%0ASaya ${nama}%0AEmail: ${email}%0A%0A${pesan}`;
+
+        const url = `https://wa.me/${nomorWA}?text=${text}`;
+
+        window.open(url, "_blank");
+    });
+            }
 });
