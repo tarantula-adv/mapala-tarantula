@@ -1,15 +1,25 @@
-// Navbar berubah warna saat scroll
-window.addEventListener("scroll", function() {
+document.addEventListener("DOMContentLoaded", function() {
+
     const navbar = document.querySelector(".navbar");
-    navbar.classList.toggle("scrolled", window.scrollY > 50);
-});
+    const toggle = document.getElementById("menu-toggle");
+    const navLinks = document.getElementById("nav-links");
 
-// Toggle hamburger menu
-const toggle = document.getElementById("menu-toggle");
-const navLinks = document.getElementById("nav-links");
+    // Scroll effect
+    window.addEventListener("scroll", function() {
+        navbar.classList.toggle("scrolled", window.scrollY > 50);
+    });
 
-if (toggle) {
-    toggle.addEventListener("click", function() {
+    // Toggle menu
+    toggle.addEventListener("click", function(e) {
+        e.stopPropagation(); // biar nggak langsung ketutup
         navLinks.classList.toggle("active");
     });
-}
+
+    // Klik di luar menu = tutup
+    document.addEventListener("click", function(e) {
+        if (!navLinks.contains(e.target) && !toggle.contains(e.target)) {
+            navLinks.classList.remove("active");
+        }
+    });
+
+});
