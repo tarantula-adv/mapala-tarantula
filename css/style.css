@@ -54,77 +54,77 @@ body {
 }
 
 .nav-links a {
-    text-decoration: none;
-    color: white;
-    font-weight: 500;
-    transition: 0.3s;
+    dekorasi teks : tidak ada ;
+    warna : putih ;
+    Ketebalan font : 500 ;
+    transisi : 0,3 detik ;
 }
 
-.nav-links a:hover {
-    color: #d6b3ff;
+.nav-links a: hover  {
+    warna : #d6b3ff;
 }
 
-/* ================= HERO ================= */
+/* ================= PAHLAWAN ================= */
 
-.hero {
-    height: 100vh;
-    background: url('../img/hero.jpg') center/cover no-repeat;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.pahlawan {
+    tinggi : 100 vh ;
+    latar belakang : url ( '../img/hero.jpg' )  tengah / sampul  tidak berulang ;
+    posisi : relatif ;
+    tampilan : fleksibel ;
+    justify-content : center ;
+    sejajarkan item : tengah ;
+    perataan teks : tengah ;
 }
 
 .overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgba(75, 0, 130, 0.6);
+    posisi : absolut ;
+    lebar : 100 % ;
+    tinggi : 100 % ;
+    latar belakang : rgba ( 75 , 0 , 130 , 0.6 ) ;
 }
 
-.hero-content {
-    position: relative;
-    color: white;
-    padding: 0 20px;
+.konten-hero {
+    posisi : relatif ;
+    warna : putih ;
+    padding : 0  20 px ;
 }
 
 .hero-content h1 {
-    font-size: 48px;
-    margin-bottom: 15px;
+    Ukuran font : 48 px ;
+    margin- bottom : 15px ;
 }
 
-.hero-content p {
-    font-size: 20px;
-    margin-bottom: 25px;
+.konten-hero p {
+    Ukuran font : 20 px ;
+    margin- bottom : 25px ;
 }
 
 .btn {
-    padding: 12px 30px;
-    background: white;
-    color: #4B0082;
-    text-decoration: none;
-    border-radius: 30px;
-    font-weight: bold;
-    transition: 0.3s;
+    padding : 12px 30px ;​ ​
+    latar belakang : putih ;
+    warna : #4B0082;
+    dekorasi teks : tidak ada ;
+    radius- batas : 30px ;
+    Ketebalan huruf : tebal ;
+    transisi : 0,3 detik ;
 }
 
-.btn:hover {
-    background: #d6b3ff;
-    color: white;
+.btn: hover  {
+    latar belakang : #d6b3ff;
+    warna : putih ;
 }
 
-/* ================= PAGE HEADER ================= */
+/* ================= HEADER HALAMAN ================= */
 
-.page-header {
-    background: #4B0082;
-    color: white;
-    text-align: center;
-    padding: 140px 20px 60px 20px;
+.header halaman {
+    latar belakang : #4B0082;
+    warna : putih ;
+    perataan teks : tengah ;
+    padding : 140px 20px  60px 20px ;​​​​  
 }
 
-.page-header h1 {
-    font-size: 36px;
+.header halaman h1 {
+    Ukuran font : 36 px ;
     margin-bottom: 10px;
 }
 
@@ -154,53 +154,38 @@ body {
 
 /* ================= RESPONSIVE ================= */
 
-@media (max-width: 992px) {
-    .navbar {
-        padding: 15px 30px;
-    }
-
-    .hero-content h1 {
-        font-size: 38px;
-    }
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
 }
+
+/* ================= MOBILE NAV ================= */
 
 @media (max-width: 768px) {
 
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 15px;
-        padding: 15px 20px;
+    .menu-toggle {
+        display: block;
     }
 
     .nav-links {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: #4B0082;
         flex-direction: column;
-        gap: 10px;
         width: 100%;
+        text-align: center;
+        display: none;
+        padding: 20px 0;
     }
 
-    .nav-links a {
-        display: block;
-        width: 100%;
+    .nav-links.active {
+        display: flex;
     }
 
-    .hero-content h1 {
-        font-size: 30px;
+    .nav-links li {
+        margin: 10px 0;
     }
-
-    .hero-content p {
-        font-size: 16px;
-    }
-
-    .page-header {
-        padding: 160px 20px 50px 20px;
-    }
-
-    .page-header h1 {
-        font-size: 26px;
-    }
-
-    .content {
-        margin: 40px auto;
-    }
-    }
+}
